@@ -95,7 +95,7 @@ async def run_bot():
                 print(f"Failed to answer: {e}")
 
 
-                     await page.wait_for_timeout(20)
+            await page.wait_for_timeout(20)
             await context.close()
 
             await context.close()
