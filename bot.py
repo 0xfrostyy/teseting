@@ -5,16 +5,26 @@ from playwright.async_api import async_playwright, TimeoutError
 ANSWER = "C"
 
 accounts = [
-{"username":"sunny-21","wallet":"A34h5FbvH6TfWom2cp2i5pRUz8ZbkKUkPxbxhGMNck59"},
-{"username":"sunny-22","wallet":"GTXTaJ4sMhE5sipURRVPdTocKgXmb9mM7xFDunH488pK"},
-{"username":"sunny-23","wallet":"83LgTnuin78pM1b3Y1JF8TrwKkLR6oCGp3tNAkNbHJc2"},
-{"username":"sunny-24","wallet":"J6NXugETAUgRgULCGBKZ1YkGZ2LsL4EnUeaorxmY2Xq2"},
-{"username":"sunny-25","wallet":"E9oJnwkLCwPXrDv4vWmdRo7jkf1BFnrQcLhWQ2cZw7XC"},
-{"username":"sunny-26","wallet":"FeseCBBgMd8tB8MYUZysbsCStrusMTkMpoy8FsFC6nHe"},
-{"username":"sunny-27","wallet":"DPoYdv2c4S2ec4fhd3c2fvBT71ACRK21CFWVfZ68pgD4"},
-{"username":"sunny-28","wallet":"D8XR7yoNjU2fiLDqfM2ughjBGRcZq8bQyyZF5WXq8zby"},
-{"username":"sunny-29","wallet":"Ddx3o5Kq1DdScnRYg9xvRs2vC7Fs4XLpTZearWTNo9wm"},
-{"username":"sunny-30","wallet":"4gdqfyyx52aVKZuFhHhBNhsRM9AT5vBhD5jrjEF87Nta"},
+{"username":"sunny-31","wallet":"589EmKZ8qGWv3yFWMfFVf9pDvMVRKRDVQ9phG9qWCxV8"},
+{"username":"sunny-32","wallet":"5skfMMRrtvpkQMUb6UCL8t4pYdXKfePhMVTTBHAA4bbD"},
+{"username":"sunny-33","wallet":"Gv8i3FMPdJ34dx8ECrBk7FGjY25znLya3XVqRvQx2kHA"},
+{"username":"sunny-34","wallet":"7dZ7hwvdxvdopQphDxjFGcYRSWdjLjyCxS9fcH4HqozN"},
+{"username":"sunny-35","wallet":"HM4f4PkYZzKLBRz8Pg7GYJQALkPR2KuPUdj4UGwrCy1u"},
+{"username":"sunny-36","wallet":"EzhAiQN6PqaneHFJfJfemiYdmjeERwDdko1gNQK9S4mV"},
+{"username":"sunny-37","wallet":"85TMZhoy1vS28MyoTaZoveVYVtzZgs5yFuZBZXDHkkg7"},
+{"username":"sunny-38","wallet":"4uAm6uy53nTv4H6oKhbVRVMKwXEGXVHqgyze9UGG5Ezv"},
+{"username":"sunny-39","wallet":"7oTDfUMshYtrptiSgNqA7qKjTTykmdLJ3gvPBy6hJoLd"},
+{"username":"sunny-40","wallet":"CNmPaJnQmccY6i9idTPJbzpqNCocDGaGsS934QutBbwe"},
+{"username":"sunny-41","wallet":"31rBR2ST1UKmbMWX6qPMwsEEpxhdqacFLPsdHsQRStJg"},
+{"username":"sunny-42","wallet":"8NTsXRD6WVoUxZ3bNfH2uyfxENPJ7V4868FfuSd217Lv"},
+{"username":"sunny-43","wallet":"DMEL3SsNAjm4Lzyx3uSfzcF9A3CaZpqgQE7SeoRBp5o8"},
+{"username":"sunny-44","wallet":"9taPHsUksJ14RXTPJPM7gjeE5yHpowSYvXBNrTCP9TeB"},
+{"username":"sunny-45","wallet":"76UpjzV9yWYsuhCSBWMRegfK4MZ4pTRCbyW9UpYwhTXz"},
+{"username":"sunny-46","wallet":"dTv3RbebvegzCMiyBBMP3XAMoZBoaMDiDDwGSaMhAYM"},
+{"username":"sunny-47","wallet":"42xBR3LWgCX8tgDqnsqop5Ro2sfCkPTGKE7ZKzGkQyPv"},
+{"username":"sunny-48","wallet":"3oZL7mGAFcNGSN4oibsm2VGGc8562G2uCnmYvvYgRxfP"},
+{"username":"sunny-49","wallet":"5RUS1rRHwXJRi6cM73FpKYB7NB3h5Pb6oHmZmmK4DZ9k"},
+{"username":"sunny-50","wallet":"4m7MhFqAAGxsSRRwKUJ7tMcXYJAcw8pgt3N6f7ZtdXz3"},
 
 
 
@@ -91,7 +101,7 @@ async def run_bot():
             except Exception as e:
                 print(f"Failed to answer: {e}")
 
-            await page.wait_for_timeout(10000)
+            await page.wait_for_timeout(3000)
             await context.close()
 
         await browser.close()
