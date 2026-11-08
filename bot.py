@@ -5,22 +5,16 @@ from playwright.async_api import async_playwright, TimeoutError
 ANSWER = "C"
 
 accounts = [
-   
-
-
-{"username":"sunny-1","wallet":"3HBrdGigUxi3FokCeV6VsY46E744GMgVJPZhg13NyfYf"},
-{"username":"sunny-2","wallet":"GEVGkbE4v5vzNXoc1Fid2mBm6oCKq3mxQbE3w9HbfAEK"},
-{"username":"sunny-3","wallet":"GpNNbBBLgoPaNNj6V5cWBFUhX43jjdE53VJijvPhFhsu"},
-{"username":"sunny-4","wallet":"5cdLqMUwy5okG4aTBwsY6F2uFzSnjfRs3iY8GCrbJ9AT"},
-{"username":"sunny-5","wallet":"DRZDT6rW5bZXvJFKrp31bkkS8RxMfx8ktXD381AnyeUq"},
-{"username":"sunny-6","wallet":"CfjMTYs6A2MbDiokKBc5CWq8jbcy8iea7tsfw9D6N8Do"},
-{"username":"sunny-7","wallet":"DB8r45ai2EgnuxKf13JqbpxrLPxxBF2eJACopC6Er1aH"},
-{"username":"sunny-8","wallet":"8RwBhp2Q86SeSWqt8Y2vspR5LfqWmQCdu2wpUTM3cSXS"},
-{"username":"sunny-9","wallet":"4q58evjqN3G6ura5t5rqptLPdDVjCFENFTpeGyR5uPnH"},
-{"username":"sunny-10","wallet":"B1KVMqniFQ9dJJKxq9wvMXWW91zz8R5Q18TANJfbBVRq"},
-
-
-  
+    {"username":"sunny-1","wallet":"3HBrdGigUxi3FokCeV6VsY46E744GMgVJPZhg13NyfYf"},
+    {"username":"sunny-2","wallet":"GEVGkbE4v5vzNXoc1Fid2mBm6oCKq3mxQbE3w9HbfAEK"},
+    {"username":"sunny-3","wallet":"GpNNbBBLgoPaNNj6V5cWBFUhX43jjdE53VJijvPhFhsu"},
+    {"username":"sunny-4","wallet":"5cdLqMUwy5okG4aTBwsY6F2uFzSnjfRs3iY8GCrbJ9AT"},
+    {"username":"sunny-5","wallet":"DRZDT6rW5bZXvJFKrp31bkkS8RxMfx8ktXD381AnyeUq"},
+    {"username":"sunny-6","wallet":"CfjMTYs6A2MbDiokKBc5CWq8jbcy8iea7tsfw9D6N8Do"},
+    {"username":"sunny-7","wallet":"DB8r45ai2EgnuxKf13JqbpxrLPxxBF2eJACopC6Er1aH"},
+    {"username":"sunny-8","wallet":"8RwBhp2Q86SeSWqt8Y2vspR5LfqWmQCdu2wpUTM3cSXS"},
+    {"username":"sunny-9","wallet":"4q58evjqN3G6ura5t5rqptLPdDVjCFENFTpeGyR5uPnH"},
+    {"username":"sunny-10","wallet":"B1KVMqniFQ9dJJKxq9wvMXWW91zz8R5Q18TANJfbBVRq"},
 ]
 
 async def handle_modal(page):
@@ -94,10 +88,7 @@ async def run_bot():
             except Exception as e:
                 print(f"Failed to answer: {e}")
 
-
-            await page.wait_for_timeout(20)
-            await context.close()
-
+            await page.wait_for_timeout(3000)
             await context.close()
 
         await browser.close()
