@@ -5,16 +5,18 @@ from playwright.async_api import async_playwright, TimeoutError
 ANSWER = "C"
 
 accounts = [
-    {"username":"sunny-1","wallet":"3HBrdGigUxi3FokCeV6VsY46E744GMgVJPZhg13NyfYf"},
-    {"username":"sunny-2","wallet":"GEVGkbE4v5vzNXoc1Fid2mBm6oCKq3mxQbE3w9HbfAEK"},
-    {"username":"sunny-3","wallet":"GpNNbBBLgoPaNNj6V5cWBFUhX43jjdE53VJijvPhFhsu"},
-    {"username":"sunny-4","wallet":"5cdLqMUwy5okG4aTBwsY6F2uFzSnjfRs3iY8GCrbJ9AT"},
-    {"username":"sunny-5","wallet":"DRZDT6rW5bZXvJFKrp31bkkS8RxMfx8ktXD381AnyeUq"},
-    {"username":"sunny-6","wallet":"CfjMTYs6A2MbDiokKBc5CWq8jbcy8iea7tsfw9D6N8Do"},
-    {"username":"sunny-7","wallet":"DB8r45ai2EgnuxKf13JqbpxrLPxxBF2eJACopC6Er1aH"},
-    {"username":"sunny-8","wallet":"8RwBhp2Q86SeSWqt8Y2vspR5LfqWmQCdu2wpUTM3cSXS"},
-    {"username":"sunny-9","wallet":"4q58evjqN3G6ura5t5rqptLPdDVjCFENFTpeGyR5uPnH"},
-    {"username":"sunny-10","wallet":"B1KVMqniFQ9dJJKxq9wvMXWW91zz8R5Q18TANJfbBVRq"},
+{"username":"sunny-11","wallet":"CJgNKqns6h66cJt2NNZM6Rb1ue2c2wDeMVjgtunPmHAo"},
+{"username":"sunny-12","wallet":"EMWnfG5BqNqXJR8VR4YhJ6bPb1yjmyrk3MwKsAwgYCxC"},
+{"username":"sunny-13","wallet":"BDjM5H5s2G6S8EVphh4Wzyhfw6dov2GZjh4FqL7UB5F5"},
+{"username":"sunny-14","wallet":"775NEWELsmmGSWYK4bUSNyTtPCueLBWy3AbnHich6tz4"},
+{"username":"sunny-15","wallet":"ppRNPXeFiJfp7Ncw3bbzmjFeVp8WMD9S16qRKgf5Rf1"},
+{"username":"sunny-16","wallet":"8YoY7JShz2rz39hhoTLMbF3hNoDfnVS8gGRS4p4WNyUY"},
+{"username":"sunny-17","wallet":"FpqfMAD1GmFaWXqKRJ33nRHgew7pknqwMbGAzYmyismb"},
+{"username":"sunny-18","wallet":"KqsVzzf7uR2iwvmTNM48HGjV2gtRdk21bp1CqLBCwQk"},
+{"username":"sunny-19","wallet":"9YmSsm6yQWtDxAyCbt1kMGmwF6usJTEzccBT5Hdj2cpT"},
+{"username":"sunny-20","wallet":"H8wvxMmb2Hq4RRtPL5TTmZrQqPPxejKz8dnTu5TFZbXr"},
+
+
 ]
 
 async def handle_modal(page):
