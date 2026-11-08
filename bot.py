@@ -90,7 +90,7 @@ async def run_bot():
             except Exception as e:
                 print(f"Failed to answer: {e}")
 
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(5000)
             await context.close()
 
         await browser.close()
