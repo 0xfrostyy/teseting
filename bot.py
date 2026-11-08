@@ -2,7 +2,7 @@ import asyncio
 from playwright.async_api import async_playwright, TimeoutError
 
 
-ANSWER = "A"
+ANSWER = "C"
 
 accounts = [
    
@@ -18,46 +18,6 @@ accounts = [
 {"username":"sunny-8","wallet":"8RwBhp2Q86SeSWqt8Y2vspR5LfqWmQCdu2wpUTM3cSXS"},
 {"username":"sunny-9","wallet":"4q58evjqN3G6ura5t5rqptLPdDVjCFENFTpeGyR5uPnH"},
 {"username":"sunny-10","wallet":"B1KVMqniFQ9dJJKxq9wvMXWW91zz8R5Q18TANJfbBVRq"},
-{"username":"sunny-11","wallet":"CJgNKqns6h66cJt2NNZM6Rb1ue2c2wDeMVjgtunPmHAo"},
-{"username":"sunny-12","wallet":"EMWnfG5BqNqXJR8VR4YhJ6bPb1yjmyrk3MwKsAwgYCxC"},
-{"username":"sunny-13","wallet":"BDjM5H5s2G6S8EVphh4Wzyhfw6dov2GZjh4FqL7UB5F5"},
-{"username":"sunny-14","wallet":"775NEWELsmmGSWYK4bUSNyTtPCueLBWy3AbnHich6tz4"},
-{"username":"sunny-15","wallet":"ppRNPXeFiJfp7Ncw3bbzmjFeVp8WMD9S16qRKgf5Rf1"},
-{"username":"sunny-16","wallet":"8YoY7JShz2rz39hhoTLMbF3hNoDfnVS8gGRS4p4WNyUY"},
-{"username":"sunny-17","wallet":"FpqfMAD1GmFaWXqKRJ33nRHgew7pknqwMbGAzYmyismb"},
-{"username":"sunny-18","wallet":"KqsVzzf7uR2iwvmTNM48HGjV2gtRdk21bp1CqLBCwQk"},
-{"username":"sunny-19","wallet":"9YmSsm6yQWtDxAyCbt1kMGmwF6usJTEzccBT5Hdj2cpT"},
-{"username":"sunny-20","wallet":"H8wvxMmb2Hq4RRtPL5TTmZrQqPPxejKz8dnTu5TFZbXr"},
-{"username":"sunny-21","wallet":"A34h5FbvH6TfWom2cp2i5pRUz8ZbkKUkPxbxhGMNck59"},
-{"username":"sunny-22","wallet":"GTXTaJ4sMhE5sipURRVPdTocKgXmb9mM7xFDunH488pK"},
-{"username":"sunny-23","wallet":"83LgTnuin78pM1b3Y1JF8TrwKkLR6oCGp3tNAkNbHJc2"},
-{"username":"sunny-24","wallet":"J6NXugETAUgRgULCGBKZ1YkGZ2LsL4EnUeaorxmY2Xq2"},
-{"username":"sunny-25","wallet":"E9oJnwkLCwPXrDv4vWmdRo7jkf1BFnrQcLhWQ2cZw7XC"},
-{"username":"sunny-26","wallet":"FeseCBBgMd8tB8MYUZysbsCStrusMTkMpoy8FsFC6nHe"},
-{"username":"sunny-27","wallet":"DPoYdv2c4S2ec4fhd3c2fvBT71ACRK21CFWVfZ68pgD4"},
-{"username":"sunny-28","wallet":"D8XR7yoNjU2fiLDqfM2ughjBGRcZq8bQyyZF5WXq8zby"},
-{"username":"sunny-29","wallet":"Ddx3o5Kq1DdScnRYg9xvRs2vC7Fs4XLpTZearWTNo9wm"},
-{"username":"sunny-30","wallet":"4gdqfyyx52aVKZuFhHhBNhsRM9AT5vBhD5jrjEF87Nta"},
-{"username":"sunny-31","wallet":"589EmKZ8qGWv3yFWMfFVf9pDvMVRKRDVQ9phG9qWCxV8"},
-{"username":"sunny-32","wallet":"5skfMMRrtvpkQMUb6UCL8t4pYdXKfePhMVTTBHAA4bbD"},
-{"username":"sunny-33","wallet":"Gv8i3FMPdJ34dx8ECrBk7FGjY25znLya3XVqRvQx2kHA"},
-{"username":"sunny-34","wallet":"7dZ7hwvdxvdopQphDxjFGcYRSWdjLjyCxS9fcH4HqozN"},
-{"username":"sunny-35","wallet":"HM4f4PkYZzKLBRz8Pg7GYJQALkPR2KuPUdj4UGwrCy1u"},
-{"username":"sunny-36","wallet":"EzhAiQN6PqaneHFJfJfemiYdmjeERwDdko1gNQK9S4mV"},
-{"username":"sunny-37","wallet":"85TMZhoy1vS28MyoTaZoveVYVtzZgs5yFuZBZXDHkkg7"},
-{"username":"sunny-38","wallet":"4uAm6uy53nTv4H6oKhbVRVMKwXEGXVHqgyze9UGG5Ezv"},
-{"username":"sunny-39","wallet":"7oTDfUMshYtrptiSgNqA7qKjTTykmdLJ3gvPBy6hJoLd"},
-{"username":"sunny-40","wallet":"CNmPaJnQmccY6i9idTPJbzpqNCocDGaGsS934QutBbwe"},
-{"username":"sunny-41","wallet":"31rBR2ST1UKmbMWX6qPMwsEEpxhdqacFLPsdHsQRStJg"},
-{"username":"sunny-42","wallet":"8NTsXRD6WVoUxZ3bNfH2uyfxENPJ7V4868FfuSd217Lv"},
-{"username":"sunny-43","wallet":"DMEL3SsNAjm4Lzyx3uSfzcF9A3CaZpqgQE7SeoRBp5o8"},
-{"username":"sunny-44","wallet":"9taPHsUksJ14RXTPJPM7gjeE5yHpowSYvXBNrTCP9TeB"},
-{"username":"sunny-45","wallet":"76UpjzV9yWYsuhCSBWMRegfK4MZ4pTRCbyW9UpYwhTXz"},
-{"username":"sunny-46","wallet":"dTv3RbebvegzCMiyBBMP3XAMoZBoaMDiDDwGSaMhAYM"},
-{"username":"sunny-47","wallet":"42xBR3LWgCX8tgDqnsqop5Ro2sfCkPTGKE7ZKzGkQyPv"},
-{"username":"sunny-48","wallet":"3oZL7mGAFcNGSN4oibsm2VGGc8562G2uCnmYvvYgRxfP"},
-{"username":"sunny-49","wallet":"5RUS1rRHwXJRi6cM73FpKYB7NB3h5Pb6oHmZmmK4DZ9k"},
-{"username":"sunny-50","wallet":"4m7MhFqAAGxsSRRwKUJ7tMcXYJAcw8pgt3N6f7ZtdXz3"},
 
 
   
@@ -133,6 +93,10 @@ async def run_bot():
                 print("Answered:", ANSWER)
             except Exception as e:
                 print(f"Failed to answer: {e}")
+
+
+                     await page.wait_for_timeout(20)
+            await context.close()
 
             await context.close()
 
