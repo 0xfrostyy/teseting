@@ -2,7 +2,7 @@ import asyncio
 from playwright.async_api import async_playwright, TimeoutError
 
 
-ANSWER = "C"
+ANSWER = "A"
 
 accounts = [
 {"username":"sunny-31","wallet":"589EmKZ8qGWv3yFWMfFVf9pDvMVRKRDVQ9phG9qWCxV8"},
