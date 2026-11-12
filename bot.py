@@ -516,7 +516,7 @@ accounts = [
 {"username":"BTR-99","wallet":"GoXAXwDVHZfHRAfBeNZNVkAWJpcnstdAx6iaresZM16e"},
 {"username":"BTR-100","wallet":"95ZwYFkcsVMouVtxJ7wXbNT8ZayqGzMSPRvmH9VKfurZ"},
 
-Guest Night Accs Starts from here:
+
 
   {"username":"Ula-1","wallet":"56ydteA1DjzZfgwFg1nrkKLo4yYJNrNYbYd5NcetDCcX"},
 {"username":"Ula-2","wallet":"F9ioK3u5Xmr6Ao27bzwt2UUMdzneceTmdZ9jdMNT2FJ3"},
